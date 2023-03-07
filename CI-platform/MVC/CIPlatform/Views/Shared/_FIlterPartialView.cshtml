@@ -1,0 +1,141 @@
+﻿
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model CI.Entity.Models.Country;
+@{
+
+    
+
+}
+
+<header class="header doubleheader header1 " style="border-bottom: solid 4px whitesmoke;">
+        <div class="header2" ">
+            <div class=" searchmission" style="display: flex;justify-content: center;">
+            <div style="margin-right: 6px;">
+                <img src="/images/search.png" alt="search">
+            </div>
+            <input class="searchinput" type="text" placeholder="Search mission.." aria-label="Search">
+
+        </div>
+        <div class="filters" style="display: flex;margin-left: auto;">
+            <div class="dropdown mobiledropdown textcolorforlanding layoutsettingfilter" style="border-right:0px;">
+                <button style="justify-content: space-evenly;width: 100%;"
+                    class="btn-dropdown btn dropdown-toggle d-flex " type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+
+                    <span class="textforfilter profiletext " style="padding-right: 5px;">
+                        Country
+                    </span>
+                    <img id="arrow" src="~/images/drop-down.png" alt="dropdown-arrow" class="ic-down">
+                </button>
+                <ul class="dropdown-menu" id="country-drop">
+                     @foreach (var item in country)
+                        {
+                            
+                        
+                    <li>
+                       
+                        <a class="dropdown-item" href="#">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id=@item.CountryId unchecked />
+                                <label class="form-check-label" for=@item.CountryId>@item.Name</label>
+                            </div>
+                        </a>
+                    </li>
+                        }
+                </ul>
+            </div>
+
+            <div class="dropdown mobiledropdown textcolorforlanding layoutsettingfilter">
+                <button style="justify-content: space-evenly;width: 100%;"
+                    class="btn-dropdown btn dropdown-toggle d-flex " type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+
+                    <span class="textforfilter profiletext" style="padding-right: 5px;">
+                        City
+                    </span>
+                    <img id="arrow" src="~/images/drop-down.png" alt="dropdown-arrow" class="ic-down">
+                </button>
+                <ul class="dropdown-menu" id="city-drop">
+                    @foreach (var item in city)
+                        {
+                            
+                    <li>
+                       
+                        <a class="dropdown-item" href="#">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id=@item.CityId unchecked />
+                                <label class="form-check-label" for=@item.CityId>@item.CityName</label>
+                            </div>
+                        </a>
+                    </li>
+                        }
+                </ul>
+            </div>
+
+            <div class=" dropdown mobiledropdown textcolorforlanding layoutsettingfilter">
+                <button style="justify-content: space-evenly;width: 100%;"
+                    class="btn-dropdown btn dropdown-toggle d-flex " type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+
+                    <span class="textforfilter profiletext" style="padding-right: 5px;">
+                        Theme
+                    </span>
+                    <img id="arrow" src="~/images/drop-down.png" alt="dropdown-arrow" class="ic-down">
+                </button>
+                <ul class="dropdown-menu">
+                    @foreach (var item in theme)
+                        {
+                            
+                        
+                    <li>
+                       
+                        <a class="dropdown-item" href="#">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id=@item.MissionThemeId unchecked />
+                                <label class="form-check-label" for=@item.MissionThemeId>@item.Title</label>
+                            </div>
+                        </a>
+                    </li>
+                        }
+                </ul>
+            </div>
+
+            <div class="dropdown mobiledropdown textcolorforlanding layoutsettingfilter"
+                style="border-right: solid 2px whitesmoke;">
+                <button style="justify-content: space-evenly;width: 100%;"
+                    class="btn-dropdown btn dropdown-toggle d-flex " type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+
+                    <span class="textforfilter profiletext" style="padding-right: 5px;">
+                        Skills
+                    </span>
+                    <img id="arrow" src="~/images/drop-down.png" alt="dropdown-arrow" class="ic-down">
+                </button>
+                <ul class="dropdown-menu">
+                    @foreach (var item in skill)
+                        {
+                            
+                        
+                    <li>
+                       
+                        <a class="dropdown-item" href="#">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id=@item.SkillId unchecked />
+                                <label class="form-check-label" for=@item.SkillId>@item.SkillName</label>
+                            </div>
+                        </a>
+                    </li>
+                        }
+                </ul>
+            </div>
+
+
+        </div>
+
+        </div>
+
+        <script src="~/Scripts/Jquery.js"></script>
+        <script src="~/js/Filter.js"></script>
+    </header>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css" />
+    <script src="./js/bootstrap.bundle.js"> </script>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+
+    <title> Landing Page </title>
+</head>
+
+<body class="landingpagefont" style="height: 90vh;">
+    <header class="header header1">
+        <div style="display: flex;">
+            <div class="stories">
+                <a style="text-decoration:none" href="#">
+                    <p style="margin:0px;font-size: 16px;" class="textcolorforlanding">Stories</p>
+                </a>
+
+            </div>
+
+            <div class="dropdown textcolorforlanding">
+                <button class="btn-dropdown btn dropdown-toggle d-flex " type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+
+                    <span class="textcolorforlanding profiletext"
+                        style="padding-right: 5px;font-size: 16px;font-family:NotoSans-Light">
+                        Policy
+                    </span>
+                    <img style=" margin-right:0px;" id="arrow" src="./images/dropdown-arrow.svg" alt="dropdown-arrow"
+                        class="ic-down">
+                </button>
+                <ul class="dropdown-menu">
+                    <li><button class="dropdown-item" type="button">Condition 1</button></li>
+                    <li><button class="dropdown-item" type="button">Condition 2</button></li>
+                    <li><button class="dropdown-item" type="button">Condition 3</button></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+        <div>
+            <div class="dropdown textcolorforlanding">
+                <button class="btn-dropdown btn dropdown-toggle d-flex " type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img style="border-radius: 50%;height: 25px;width: 25px;margin-right:9px;"
+                        src="./images/user-img.png">
+                    <span class="textcolorforlanding profiletext"
+                        style="padding-right: 5px; font-size: 15px;letter-spacing: 0px;">
+                        Evan Donohue
+                    </span>
+                    <img style="margin-right:0px;" id="arrow" src="./images/dropdown-arrow.svg" alt="dropdown-arrow"
+                        class="ic-down">
+                </button>
+                <ul class="dropdown-menu">
+                    <li><button class="dropdown-item" type="button">Action</button></li>
+                    <li><button class="dropdown-item" type="button">Another action</button></li>
+                    <li><a href="index.html" class="dropdown-item" type="button">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <header class="header header1 doubleheader" style="border-bottom: solid 4px whitesmoke;">
+        <div class="header2" ">
+            <div class=" searchmission" style="display: flex;justify-content: center;">
+            <div style="margin-right: 6px;">
+                <img src="./images/search.png" alt="search">
+            </div>
+            <input class="searchinput" type="text" placeholder="Search mission.." aria-label="Search">
+
+        </div>
+        <div class="filters" style="display: flex;margin-left: auto;">
+            <div class="dropdown mobiledropdown textcolorforlanding layoutsettingfilter" style="border-right:0px;">
+                <button style="justify-content: space-evenly;width: 100%;"
+                    class="btn-dropdown btn dropdown-toggle d-flex " type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+
+                    <span class="textforfilter profiletext " style="padding-right: 5px;">
+                        Country
+                    </span>
+                    <img id="arrow" src="./images/dropdown-arrow.svg" alt="dropdown-arrow" class="ic-down">
+                </button>
+                <ul class="dropdown-menu">
+                    <li><button class="dropdown-item" type="button">Condition 1</button></li>
+                    <li><button class="dropdown-item" type="button">Condition 2</button></li>
+                    <li><button class="dropdown-item" type="button">Condition 3</button></li>
+                </ul>
+            </div>
+
+            <div class="dropdown mobiledropdown textcolorforlanding layoutsettingfilter">
+                <button style="justify-content: space-evenly;width: 100%;"
+                    class="btn-dropdown btn dropdown-toggle d-flex " type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+
+                    <span class="textforfilter profiletext" style="padding-right: 5px;">
+                        City
+                    </span>
+                    <img id="arrow" src="./images/dropdown-arrow.svg" alt="dropdown-arrow" class="ic-down">
+                </button>
+                <ul class="dropdown-menu">
+                    <li><button class="dropdown-item" type="button">Condition 1</button></li>
+                    <li><button class="dropdown-item" type="button">Condition 2</button></li>
+                    <li><button class="dropdown-item" type="button">Condition 3</button></li>
+                </ul>
+            </div>
+
+            <div class=" dropdown mobiledropdown textcolorforlanding layoutsettingfilter">
+                <button style="justify-content: space-evenly;width: 100%;"
+                    class="btn-dropdown btn dropdown-toggle d-flex " type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+
+                    <span class="textforfilter profiletext" style="padding-right: 5px;">
+                        Theme
+                    </span>
+                    <img id="arrow" src="./images/dropdown-arrow.svg" alt="dropdown-arrow" class="ic-down">
+                </button>
+                <ul class="dropdown-menu">
+                    <li><button class="dropdown-item" type="button">Condition 1</button></li>
+                    <li><button class="dropdown-item" type="button">Condition 2</button></li>
+                    <li><button class="dropdown-item" type="button">Condition 3</button></li>
+                </ul>
+            </div>
+
+            <div class="dropdown mobiledropdown textcolorforlanding layoutsettingfilter"
+                style="border-right: solid 2px whitesmoke;">
+                <button style="justify-content: space-evenly;width: 100%;"
+                    class="btn-dropdown btn dropdown-toggle d-flex " type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+
+                    <span class="textforfilter profiletext" style="padding-right: 5px;">
+                        Skills
+                    </span>
+                    <img id="arrow" src="./images/dropdown-arrow.svg" alt="dropdown-arrow" class="ic-down">
+                </button>
+                <ul class="dropdown-menu">
+                    <li><button class="dropdown-item" type="button">Condition 1</button></li>
+                    <li><button class="dropdown-item" type="button">Condition 2</button></li>
+                    <li><button class="dropdown-item" type="button">Condition 3</button></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+        </div>
+    </header>
+
+    <!-- Body starts from here -->
+
+    <div class="landingbody text-center missionbody" style="height:70%;">
+        <h1 class="text-center my-5">No mission found</h1>
+        <button type="button" class="btn btn-outline-warning w-auto pt-1 apply">
+            <div class="applytext">Submit New Mission</div>
+            <div>
+                <img class="right-arrow ms-2" src="./images/right-arrow.png">
+            </div>
+        </button>
+        
+    </div>
+    <footer class="footer nomissionfooter">
+        <a style="text-decoration:none;
+        color: #414141;" href="#"><span>Privacy Policy &nbsp;&nbsp;&nbsp;</span></a>
+         <a style="text-decoration:none;
+         color: #414141;" href="#"><span>Contact Us</span></a>
+    </footer>
+
+
+</body>
+    
+    </html>

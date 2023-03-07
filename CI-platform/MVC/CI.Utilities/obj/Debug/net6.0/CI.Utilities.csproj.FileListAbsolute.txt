@@ -1,0 +1,55 @@
+C:\Jay Modi\Final CI - without database2\CI-platform\MVC\CI.Utilities\bin\Debug\net6.0\CI.Utilities.deps.json
+C:\Jay Modi\Final CI - without database2\CI-platform\MVC\CI.Utilities\bin\Debug\net6.0\CI.Utilities.runtimeconfig.json
+C:\Jay Modi\Final CI - without database2\CI-platform\MVC\CI.Utilities\bin\Debug\net6.0\CI.Utilities.dll
+C:\Jay Modi\Final CI - without database2\CI-platform\MVC\CI.Utilities\bin\Debug\net6.0\ref\CI.Utilities.dll
+C:\Jay Modi\Final CI - without database2\CI-platform\MVC\CI.Utilities\bin\Debug\net6.0\CI.Utilities.pdb
+C:\Jay Modi\Final CI - without database2\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.csproj.AssemblyReference.cache
+C:\Jay Modi\Final CI - without database2\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Jay Modi\Final CI - without database2\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.AssemblyInfoInputs.cache
+C:\Jay Modi\Final CI - without database2\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.AssemblyInfo.cs
+C:\Jay Modi\Final CI - without database2\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.csproj.CoreCompileInputs.cache
+C:\Jay Modi\Final CI - without database2\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.dll
+C:\Jay Modi\Final CI - without database2\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\ref\CI.Utilities.dll
+C:\Jay Modi\Final CI - without database2\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.pdb
+C:\Jay Modi\Final CI - without database2\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.genruntimeconfig.cache
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Utilities\bin\Debug\net6.0\CI.Utilities.deps.json
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Utilities\bin\Debug\net6.0\CI.Utilities.runtimeconfig.json
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Utilities\bin\Debug\net6.0\CI.Utilities.dll
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Utilities\bin\Debug\net6.0\ref\CI.Utilities.dll
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Utilities\bin\Debug\net6.0\CI.Utilities.pdb
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.AssemblyInfoInputs.cache
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.AssemblyInfo.cs
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.csproj.CoreCompileInputs.cache
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.dll
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\ref\CI.Utilities.dll
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.pdb
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.genruntimeconfig.cache
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Utilities\bin\Debug\net6.0\CI.Utilities.deps.json
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Utilities\bin\Debug\net6.0\CI.Utilities.runtimeconfig.json
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Utilities\bin\Debug\net6.0\CI.Utilities.dll
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Utilities\bin\Debug\net6.0\ref\CI.Utilities.dll
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Utilities\bin\Debug\net6.0\CI.Utilities.pdb
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.AssemblyInfoInputs.cache
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.AssemblyInfo.cs
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.csproj.CoreCompileInputs.cache
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.dll
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\ref\CI.Utilities.dll
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.pdb
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.genruntimeconfig.cache
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.csproj.AssemblyReference.cache
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Utilities\bin\Debug\net6.0\CI.Utilities.deps.json
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Utilities\bin\Debug\net6.0\CI.Utilities.runtimeconfig.json
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Utilities\bin\Debug\net6.0\CI.Utilities.dll
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Utilities\bin\Debug\net6.0\ref\CI.Utilities.dll
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Utilities\bin\Debug\net6.0\CI.Utilities.pdb
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.AssemblyInfoInputs.cache
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.AssemblyInfo.cs
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.csproj.CoreCompileInputs.cache
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.dll
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\ref\CI.Utilities.dll
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.pdb
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.genruntimeconfig.cache
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Utilities\obj\Debug\net6.0\CI.Utilities.csproj.AssemblyReference.cache

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/favicon.ico" />
+
+
+    <!-- Material Icon -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+   
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/inner.css" />
+
+    <title>Innerpage-Company</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="d-flex container-fluid">
+        <div class="left-header">
+          <button href="#" class="hamburger-icon mx-1" id="hamburger">
+            <img
+              class="icon menuIcon"
+              src="./images/menu-bar.svg"
+              onclick="openCloseSidebar()"
+            />
+            <img
+              class="icon closeIcon"
+              src="./images/close.png"
+              onclick="openCloseSidebar()"
+            />
+          </button>
+
+          <a href="./index.html" class="header-logo"
+            ><img src="./images/logo.svg"
+          /></a>
+
+          <div class="search-box">
+            <a href="#" class="search-icon">
+              <img class="icon" src="./images/search-icon.svg" />
+            </a>
+            <input class="search-input" type="text" placeholder="Search" />
+          </div>
+        </div>
+
+        <div class="right-header">
+          <a href="#" class="notification-icon px-2"
+            ><img
+              class="icon"
+              src="./images/notification-icon.svg"
+              alt="notification-icon"
+          /></a>
+
+          <div class="profile-box">
+            <img
+              class="profile-image"
+              src="./images/profile.png"
+              alt="profile-image"
+            />
+            <span class="px-1">John Doe</span>
+            <a href="#" class="down-arrow-icon px-1"
+              ><img src="./images/downward-arrow.svg" alt="down-arrow-icon"
+            /></a>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="nav sidebar show-menu menu">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="nav-icon-box">
+                <img class="icon" src="./images/dashboard-default.svg" alt="" />
+                <a href="./dashboard.html">Dashboard</a>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="nav-icon-box icon-box-active">
+                <img class="icon" src="./images/graph-active.svg" alt="" />
+                <a href="./innerpage.html">Analysis</a>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="nav-icon-box">
+                <img class="icon" src="./images/inbox-default.svg" alt="" />
+                <a href="#">Inbox</a>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="nav-icon-box">
+                <img class="icon" src="./images/clock-default.svg" alt="" />
+                <a href="#">History</a>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="nav-icon-box">
+                <img class="icon" src="./images/user-default.svg" alt="" />
+                <a href="#">Users</a>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="nav-icon-box">
+                <img
+                  class="icon"
+                  src="./images/maintenance-default.svg"
+                  alt=""
+                />
+                <a href="#">Maintenance</a>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="nav-icon-box">
+                <img class="icon" src="./images/setting-default.svg" alt="" />
+                <a href="#">Setting</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <article>
+          <h2 class="title">Analysis</h2>
+
+          <div class="container-fluid py-4">
+            <div class="col-md-12 py-2">
+              <h3>One Column</h3>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Name"
+                aria-label="default input example"
+              />
+            </div>
+            <div class="col-md-12 py-2">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Dropdown</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col-md-12 py-2">
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                placeholder="Multiple line"
+                rows="4"
+              ></textarea>
+            </div>
+          </div>
+          <div class="container-fluid py-2">
+            <div class="col-md-12 py-3">
+              <h3>Two Column</h3>
+              <div class="row py-2 column-gap-0">
+                <div class="col-md-6 col-sm-12 mb-2">
+                  <div class="inputContainer">
+                    <input
+                      type="text"
+                      class="input"
+                      id="floatingName"
+                      placeholder="name"
+                    />
+                    <label for="floatingName" class="label">Name</label>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <div class="inputContainer">
+                    <input
+                      type="email"
+                      class="input"
+                      id="floatingUserName"
+                      placeholder="johndoe"
+                    />
+                    <label for="floatingUserName" class="label">Username</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row py-2 column-gap-0">
+                <div class="col-md-6 col-sm-12 mb-2">
+                  <div class="inputContainer">
+                    <input
+                      type="password"
+                      class="input"
+                      id="floatingInputPassword"
+                      placeholder="Password"
+                    />
+                    <label for="floatingInputPassword" class="label"
+                      >Password</label
+                    >
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <div class="inputContainer">
+                    <select class="form-select input" aria-label="Default">
+                      <option selected>Dropdown</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid py-4">
+            <div class="col-md-12">
+              <h3>Three Column</h3>
+              <div class="row column-gap-0">
+                <div class="col-md-4 col-sm-12 mb-2">
+                  <div class="form-floating">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="floatingInputEmail"
+                      placeholder="name@example.com"
+                    />
+                    <label for="floatingInputEmail">Focus</label>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-12 mb-2">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Password"
+                      id="floatingInputPass"
+                      aria-label="Password"
+                    />
+                    <label for="floatingInputPass">Password</label>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-12 mb-2">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="floatingInputDisabled"
+                      disabled
+                      placeholder="disabled"
+                      aria-label="disabled"
+                      style="border: 1px dashed #adadad"
+                    />
+                    <label for="floatingInput">Disabled</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid py-4">
+            <div class="col-md-12">
+              <h3>Four Column</h3>
+              <div class="row column-gap-0">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="validationServer"
+                      aria-describedby="validationServerFeedback"
+                      value="UI Designer"
+                      required
+                    />
+                    <label for="validationServer" class="form-label"
+                      >Designation</label
+                    >
+                    <div id="validationServerFeedback" class="form-text">
+                      Enter Valid data
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="validationServer02"
+                      placeholder="Name"
+                      aria-describedby="validationServer02Feedback"
+                      required
+                    />
+                    <label for="validationServer02">Name</label>
+                    <div id="validationServer02Feedback" class="form-text">
+                      Enter your full Name as per ID
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="form-floating">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="floatUserName"
+                      value="johndoe"
+                      required
+                    />
+                    <label for="floatUserName" class="form-label"
+                      >Username</label
+                    >
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="form-floating">
+                    <select id="" class="form-select" aria-label="Default">
+                      <option selected>Select</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    <label for="">Dropdown</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid py-4">
+            <div class="col-md-12">
+              <h3>Other Design Elements</h3>
+
+              <div class="row mt-2">
+                <h4>File Upload</h4>
+
+                <div class="input-group">
+                  <input type="file" id="getFile" hidden />
+                  <label for="getFile"
+                    ><img src="./images/cloud-upload-icon.svg" />Upload</label
+                  >
+                  <span id="file-chosen">No item selected</span>
+                </div>
+              </div>
+
+              <div class="row mt-2">
+                <h4>Radio Button</h4>
+                <div class="d-flex gx-0">
+                  <div class="form-check">
+                    <input type="radio" name="colors" id="Red" value="Red" />
+                    <label class="label-color" for="Red"> Option 1 </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="radio"
+                      name="colors"
+                      id="Red2"
+                      checked
+                      value="Red"
+                    />
+                    <label class="label-color" for="Red2"> Option 2 </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mt-2">
+                <h4>Checkbox</h4>
+                <div class="d-flex gx-0">
+                  <div class="form-check">
+                    <input type="checkbox" id="Red3" value="option1" />
+                    <label class="label-color" for="Red3">Option 1</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" id="Red4" value="option2" checked />
+                    <label class="label-color" for="Red4">Option 2</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mt-2">
+                <h4>Snackbar</h4>
+                <div class="snackbar">
+                  <div class="snack error-snack">
+                    <img
+                      class="snack-img"
+                      src="./images/error-icon.svg"
+                      alt="error-icon"
+                    />
+                    <p class="snack-txt">This is an error Message!</p>
+                  </div>
+                  <div class="snack info-snack">
+                    <img
+                      class="snack-img"
+                      src="./images/info-icon.svg"
+                      alt="error-icon"
+                    />
+                    <p class="snack-txt">This is an information Message!</p>
+                  </div>
+                  <!-- </div> -->
+                  <!-- <div class="snackbar"> -->
+                  <div class="snack warning-snack">
+                    <img
+                      class="snack-img"
+                      src="./images/warning-icon.svg"
+                      alt="error-icon"
+                    />
+                    <p class="snack-txt">This is a warning Message!</p>
+                  </div>
+                  <div class="snack success-snack">
+                    <img
+                      class="snack-img"
+                      src="./images/success-icon.svg"
+                      alt="error-icon"
+                    />
+                    <p class="snack-txt">This is a success Message!</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mt-2">
+                <h4>Call to Action</h4>
+                <div class="d-flex column-gap-3">
+                  <button class="btn-danger cta">Primary</button>
+                  <button class="btn-outline-danger cta">Secondary</button>
+                </div>
+              </div>
+
+              <div class="row mt-2">
+                <h4>Tabs</h4>
+                <div class="mt-2">
+                  <ul class="nav nav-tabs" id="myTab">
+                    <li class="nav-item">
+                      <a
+                        href="#tab-1"
+                        class="nav-link active"
+                        data-bs-toggle="tab"
+                        >Tab 1</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a href="#tab-2" class="nav-link" data-bs-toggle="tab"
+                        >Tab 2</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a href="#tab-3" class="nav-link" data-bs-toggle="tab"
+                        >Tab 3</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="tab-content mt-4">
+                    <div class="tab-pane fade show active" id="tab-1">
+                      <p>
+                        Aliquip placeat salvia cillum iphone. Seitan aliquip
+                        quis cardigan american apparel, butcher voluptate nisi
+                        qui. Raw denim you probably haven't heard of them jean
+                        shorts Austin. Nesciunt tofu stumptown aliqua, retro
+                        synth master cleanse. Mustache cliche tempor,
+                        williamsburg carles vegan helvetica. Reprehenderit
+                        butcher retro keffiyeh dreamcatcher synth.
+                      </p>
+                    </div>
+                    <div class="tab-pane fade" id="tab-2">
+                      <p>
+                        Vestibulum nec erat eu nulla rhoncus fringilla ut non
+                        neque. Vivamus nibh urna, ornare id gravida ut, mollis a
+                        magna. Aliquam porttitor condimentum nisi, eu viverra
+                        ipsum porta ut. Nam hendrerit bibendum turpis, sed
+                        molestie mi fermentum id. Aenean volutpat velit sem. Sed
+                        consequat ante in rutrum convallis. Nunc facilisis leo
+                        at faucibus adipiscing.
+                      </p>
+                    </div>
+                    <div class="tab-pane fade" id="tab-3">
+                      <p>
+                        Donec vel placerat quam, ut euismod risus. Sed a mi
+                        suscipit, elementum sem a, hendrerit velit. Donec at
+                        erat magna. Sed dignissim orci nec eleifend egestas.
+                        Donec eget mi consequat massa vestibulum laoreet. Mauris
+                        et ultrices nulla, malesuada volutpat ante. Fusce ut
+                        orci lorem. Donec molestie libero in tempus imperdiet.
+                        Cum sociis natoque penatibus et magnis.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+
+    <!-- JS -->
+    <script src="./js/custom.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,382 @@
+header {
+    height: 80px;
+    align-items: center;
+    background: #fff;
+  }
+  
+  .icon {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .left-header {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    column-gap: 1rem;
+  }
+  
+  .left-header button {
+    border: none;
+    background-color: white;
+  }
+  
+  .closeIcon {
+    display: none;
+  }
+  
+  .left-header .header-logo {
+    margin: 0 10% 0 1%;
+  }
+  
+  .left-header .header-logo img {
+    width: 80%;
+    min-width: 132px;
+  }
+  
+  .left-header .search-box {
+    display: flex;
+    align-items: center;
+    background: #fafafa;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 5px;
+  }
+  .left-header .search-box .search-icon {
+    display: flex;
+    margin-right: 15px;
+  }
+  
+  .search-box input {
+    border: 1px solid #fafafa;
+    background: #fafafa;
+  }
+  
+  .search-box input:focus {
+    outline: none;
+  }
+  
+  .search-box input::placeholder {
+    color: #adadad;
+  }
+  
+  .right-header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    column-gap: 1rem;
+    min-width: 20%;
+  }
+  
+  .right-header .profile-box {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    min-width: 60%;
+  }
+  
+  .profile-box .profile-image {
+    width: 44px;
+    aspect-ratio: 1;
+  }
+  
+  .profile-box .down-arrow-icon {
+    display: flex;
+  }
+  .profile-box .down-arrow-icon img {
+    width: 18px;
+  }
+  
+  section {
+    display: flex;
+  }
+  
+
+
+
+
+
+/*8888888888888888888888888888888888888888888*/
+
+
+.sidebar {
+    background-color: #fff;
+  }
+  
+  .show-menu {
+    transform: translateX(0);
+    transition: all 500ms ease-in-out;
+  }
+  .hide-menu {
+    position: absolute;
+    transform: translateX(-100%);
+    transition: all 500ms ease-in-out;
+  }
+  
+  nav {
+    background: #fff;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0 30px;
+  }
+  
+  nav ul li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  
+  .list-group-item {
+    border: none !important;
+  }
+  
+  .nav-icon-box {
+    display: flex;
+    align-items: center;
+    padding: 10px 40px 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .nav-icon-box .icon {
+    margin-right: 10px;
+  }
+  
+  .nav-icon-box a {
+    margin: 0;
+    text-decoration: none;
+    color: #3e3e3e;
+  }
+  
+  .icon-box-active {
+    background: #fff3f4;
+  }
+  .icon-box-active a {
+    color: #c8242f;
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------*/
+
+.container-fluid div h3 {
+    font-size: 22px;
+    line-height: 29px;
+    color: #3e3e3e;
+  }
+  
+  .container-fluid div h4 {
+    font-size: 18px;
+    line-height: 24px;
+    color: #3e3e3e;
+    margin-top: 15px;
+  }
+  
+  .inputContainer {
+    position: relative;
+    height: 49px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #adadad;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0 15px;
+    outline: none;
+    background: none;
+    z-index: 1;
+  }
+  
+  .label {
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: #fafafa;
+    color: #adadad;
+  }
+  
+  ::placeholder {
+    color: transparent;
+  }
+  
+  .input:not(:placeholder-shown) + .label {
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #adadad;
+  }
+  
+  .input:focus + .label {
+    top: -8px;
+    left: 8px;
+    z-index: 10;
+    font-size: 12px;
+  }
+  
+  .input-group label {
+    border-radius: 18px !important;
+    height: 36px;
+    width: 124px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #c8242f;
+    color: #c8242f;
+    column-gap: 0.2rem;
+  }
+  
+  #file-chosen {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #adadad;
+  }
+  
+  input[type="radio"]#Red,
+  input[type="radio"]#Red2,
+  input[type="checkbox"]#Red3,
+  input[type="checkbox"]#Red4 {
+    accent-color: #c8242f;
+  }
+  
+  .snackbar {
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .snack {
+    height: 44px;
+    width: 90%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+  .error-snack {
+    color: #ff3535;
+    border: 1px solid #ff3535;
+  }
+  .info-snack {
+    color: #00b9e1;
+    border: 1px solid #00b9e1;
+  }
+  .warning-snack {
+    color: #ffa800;
+    border: 1px solid #ffa800;
+  }
+  .success-snack {
+    color: #00af27;
+    border: 1px solid #00af27;
+  }
+  .snack-img {
+    width: 21px;
+  }
+  .snack-txt {
+    display: inline;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0;
+    padding-left: 5px;
+  }
+  
+  .cta {
+    height: 44px;
+    border-radius: 23px;
+    padding: 0 30px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .btn-danger {
+    color: #fff;
+    border: 1px solid transparent;
+    background-color: #c8242f;
+  }
+  .btn-outline-danger {
+    color: #c8242f;
+    border: 1px solid #c8242f;
+  }
+  .btn-danger:hover {
+    color: #c8242f;
+    border: 1px solid #c8242f;
+    background-color: #fff;
+  }
+  .btn-outline-danger:hover {
+    color: #fff;
+    border: none;
+    background-color: #c8242f;
+  }
+  
+  #myTab .nav-item a {
+    color: #adadad;
+  }
+  
+  #myTab .nav-item .active {
+    color: #c8242f;
+    border: none;
+    border-bottom: 3px solid #c8242f;
+  }
+  
+  .tab-content p {
+    font-size: 15px;
+    line-height: 24px;
+    color: #3e3e3e;
+  }
+  /*----- MEDIA QUERIES ------*/
+  
+  @media screen and (max-width: 1080px) {
+  }
+  
+  @media screen and (max-width: 991px) {
+  }
+  
+  @media screen and (max-width: 768px) {
+    .snackbar {
+      grid-template-columns: 1fr;
+    }
+  }
+  

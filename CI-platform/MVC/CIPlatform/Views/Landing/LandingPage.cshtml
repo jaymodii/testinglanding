@@ -1,0 +1,1055 @@
+﻿@using CI.Entity.ViewModels
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Landing Page";
+    Layout = "_HeaderFooter";
+
+}
+@model CI.Entity.ViewModels.landing;
+
+  
+
+
+<partial name="_FilterPartialView" />
+@*<h1>Landing Page</h1>*@
+ <div class="landingbody flex-grow-1">
+
+        <div class="history" id="history">
+            <div class="rounded-pill pilltextcolor myroundedpill" style="height: 27px;"><span>Tree Plantation
+                    <img src="~/images/cancel.png" alt="cancel"></i>
+                </span>
+
+            </div>
+
+            <div class="rounded-pill pilltextcolor myroundedpill" style="height: 27px;"><span>Tree Plantation
+                    <img src="~/images/cancel.png" alt="cancel"></i>
+                </span>
+            </div>
+            <div class="rounded-pill pilltextcolor myroundedpill" style="height: 27px;"><span>Tree Plantation
+                    <img src="~/images/cancel.png" alt="cancel"></i>
+                </span>
+            </div>
+            <a class=" clearall pilltextcolor " href="#" style="text-decoration: none;" onclick="deletehistory()" > Clear all</a>
+        </div>
+        <div style="display: flex; margin-top: 7px;align-items: center;margin-bottom: 14px;">
+            <span style="font-family:NotoSans-Light; letter-spacing: NaNpx;">Explore &nbsp</span>
+            <span style="font-size:large;font-family: NotoSans-Regular;letter-spacing: NaNpx;"><b>72 missions</b></span>
+            <div style="display:flex;align-items: center; margin-left: auto;column-gap: 1vw;">
+
+                <div class="dropdown textcolorforlanding layoutsettingfilter"
+                    style="border:solid 2px whitesmoke;margin-right: 2vw;">
+                    <button style="justify-content: space-evenly;width: 100%;"
+                        class="btn-dropdown btn dropdown-toggle d-flex " type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+
+                        <span class="textforfilter profiletext " style="padding-right: 5px;">
+                            Sort by
+                        </span>
+                        <img id="arrow" src="~/images/drop-down.png" alt="dropdown-arrow" class="ic-down">
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><button class="dropdown-item" type="button">Condition 1</button></li>
+                        <li><button class="dropdown-item" type="button">Condition 2</button></li>
+                        <li><button class="dropdown-item" type="button">Condition 3</button></li>
+                    </ul>
+                </div>
+                <div class="circle" style="padding-left: 2.5px;">
+                    <img src="~/images/grid.png" class="iconsmall" id="grid" onclick="gridview()" alt="grid">
+                </div>
+                <div class="circle" style="padding-left:6px;padding-bottom:7px">
+                    <img src="~/images/list.png" style="height:fit-content" class="iconsmall" id="list"
+                     onclick="listview()" alt="grid">
+                </div>
+
+
+            </div>
+        </div>
+        <!-- mission grid starts from here -->
+        <!-- mission grid starts from here -->
+         
+        
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-4 gridrow">
+            <!-- first card -->
+            <!-- first card -->
+            <!-- first card -->
+
+            @{
+                   foreach (var item in Model.Missions)
+                    {
+                       
+                   
+            
+            
+            <div class="col col-lg-4 col-md-6 col-sm-12">
+                <div class="card h-100">
+                    <div class="cardimage">
+                        <img src="~/images/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png" class="card-img-top"
+                            alt="Education-Supplies-for-Every--Pair-of-Shoes-Sold">
+                        <div class="location">
+                            <img src="~/images/pin.png">
+                            <span>@item.City.CityName  </span>
+                        </div>
+                         
+                        <button class="likebtn">
+                            <img src="~/images/heart.png">
+                        </button>
+                        <button class="sharebtn">
+                            <img src="~/images/user.png">
+                        </button>
+
+                        <div class="missiontheme">
+                            <span>
+                                @item.MissionTheme.Title
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title cardtitletext">@item.Title</h5>
+
+                        <p class="card-text carddesctext">@item.Description</p>
+                        <div class="rating">
+                            <span class="cardratingtext">@item.OrganizationName</span>
+                            <div class="starcontainer">
+                                <img class="star" src="~/images/selected-star.png">
+                                <img class="star" src="~/images/selected-star.png">
+                                <img class="star" src="~/images/selected-star.png">
+                                <img class="star" src="~/images/star.png">
+                                <img class="star" src="~/images/star.png">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- vacancy and timeline details starts from here -->
+                    <!-- vacancy and timeline details starts from here -->
+                    <!-- vacancy and timeline details starts from here -->
+                    <div class="cardnumberdetails card-footer">
+                        <div class="rounded-pill pilltextcolor cardtimesheetpill deadlinetext">
+                               
+                                @if (item.MissionType.Equals("Time"))
+                                {
+
+                                    <span>From @item.StartDate.Value.ToShortDateString() until @item.EndDate.Value.ToShortDateString()
+                                    </span>
+                                }else{
+                                        <span>@item.GoalMissions[0].GoalObjectiveText
+                                        </span>
+                                    }
+
+                                
+
+                   
+                         </div>
+                        <div class="cardnumberdetails2">
+                            <div class="cardnumberdetails3 col-6">
+                                <div>
+                                    <img src="~/images/Already-volunteered.png" class="cardicon"
+                                        alt="Already volunteered">
+                                </div>
+                                <div>
+                                    <p class="cardnumeric">250
+                                        <span class="cardnumerictext">Already volunteered</span>
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="cardnumberdetails3 col-6">
+                                <div>
+                                    <img src="~/images/deadline.png" class="cardicon" alt="Deadline">
+                                </div>
+                                <div>
+                                    <p class="cardnumeric">09/01/2019
+                                        <span class="cardnumerictext">Deadline</span>
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card-footer cardfooter">
+                        <button type="button" class="btn btn-outline-warning apply">
+                            <div class="applytext">Apply</div>
+                            <div>
+                                <img class="right-arrow" src="~/images/right-arrow.png">
+                            </div>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            }
+            }
+            @*<div class="col col-lg-4 col-md-6 col-sm-12">
+                <div class="card h-100">
+
+                    <img src="~/images/Grow-Trees-On-the-path-to-environment-sustainability.png" class="card-img-top"
+                        alt="Grow trees">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>*@
+            <!-- second card -->
+            <!-- second card -->
+            <!-- second card -->
+
+           @* <div class="col col-lg-4 col-md-6 col-sm-12">
+                <div class="card h-100">
+                    <div class="cardimage">
+                        <img src="~/images/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png" class="card-img-top"
+                            alt="Education-Supplies-for-Every--Pair-of-Shoes-Sold">
+                        <div class="location">
+                            <img src="~/images/pin.png">
+                            <span>Melbourne</span>
+                        </div>
+                         
+                        <button class="likebtn">
+                            <img src="~/images/heart.png">
+                        </button>
+                        <button class="sharebtn">
+                            <img src="~/images/user.png">
+                        </button>
+
+                        <div class="missiontheme">
+                            <span>
+                                Environment
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title cardtitletext">Education Supplies for Every Pair of Shoes Sold</h5>
+
+                        <p class="card-text carddesctext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod
+                            tempor incididunt ut labore...</p>
+                        <div class="rating">
+                            <span class="cardratingtext">Australian Paradise</span>
+                            <div class="starcontainer">
+                                <img class="star" src="~/images/selected-star.png">
+                                <img class="star" src="~/images/selected-star.png">
+                                <img class="star" src="~/images/selected-star.png">
+                                <img class="star" src="~/images/star.png">
+                                <img class="star" src="~/images/star.png">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- vacancy and timeline details starts from here -->
+                    <!-- vacancy and timeline details starts from here -->
+                    <!-- vacancy and timeline details starts from here -->
+                    <div class="cardnumberdetails card-footer">
+                        <div class="rounded-pill pilltextcolor cardtimesheetpill deadlinetext">
+                            <span>From 10/01/2019 until 25/02/2019
+                            </span>
+
+                        </div>
+                        <div class="cardnumberdetails2">
+                            <div class="cardnumberdetails3 col-6">
+                                <div>
+                                    <img src="~/images/Already-volunteered.png" class="cardicon"
+                                        alt="Already volunteered">
+                                </div>
+                                <div>
+                                    <p class="cardnumeric">250
+                                        <span class="cardnumerictext">Already volunteered</span>
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="cardnumberdetails3 col-6">
+                                <div>
+                                    <img src="~/images/deadline.png" class="cardicon" alt="Deadline">
+                                </div>
+                                <div>
+                                    <p class="cardnumeric">09/01/2019
+                                        <span class="cardnumerictext">Deadline</span>
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card-footer cardfooter">
+                        <button type="button" class="btn btn-outline-warning apply">
+                            <div class="applytext">Apply</div>
+                            <div>
+                                <img class="right-arrow" src="~/images/right-arrow.png">
+                            </div>
+                        </button>
+
+                    </div>
+                </div>
+            </div>*@
+            <!-- third card -->
+            <!-- third card -->
+            <!-- third card -->
+
+           @* <div class="col col-lg-4 col-md-6 col-sm-12">
+                <div class="card h-100">
+                    <img src="~/images/Nourish-the-Children-in--African-country.png" class="card-img-top"
+                        alt="Nourish african children">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This card has even longer content than the first to show that equal
+                            height action.</p>
+                    </div>
+                    <div class="cardnumberdetails card-footer">
+                        <div class="rounded-pill pilltextcolor cardtimesheetpill deadlinetext">
+                            <span>From 10/01/2019 until 25/02/2019
+                            </span>
+
+                        </div>
+                        <div class="cardnumberdetails2">
+                            <div class="cardnumberdetails3 col-6">
+                                <div>
+                                    <img src="~/images/Already-volunteered.png" class="cardicon"
+                                        alt="Already volunteered">
+                                </div>
+                                <div>
+                                    <p class="cardnumeric">250
+                                        <span class="cardnumerictext">Already volunteered</span>
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="cardnumberdetails3 col-6">
+                                <div>
+                                    <img src="~/images/deadline.png" class="cardicon" alt="Deadline">
+                                </div>
+                                <div>
+                                    <p class="cardnumeric">09/01/2019
+                                        <span class="cardnumerictext">Deadline</span>
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card-footer cardfooter">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>*@
+        
+            <!-- Second row -->
+            <!-- Second row -->
+            <!-- Second row -->
+        
+            <!--Second row first card -->
+            <!--Second row first card -->
+            <!--Second row first card -->
+          @*  <div class="col col-lg-4 col-md-6 col-sm-12">
+                <div class="card h-100">
+
+                    <img src="~/images/Grow-Trees-On-the-path-to-environment-sustainability.png" class="card-img-top"
+                        alt="Grow trees">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>*@
+            <!-- second card -->
+            <!-- second card -->
+            <!-- second card -->
+
+           @* <div class="col col-lg-4 col-md-6 col-sm-12">
+                <div class="card h-100">
+                    <div class="cardimage">
+                        <img src="~/images/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png" class="card-img-top"
+                            alt="Education-Supplies-for-Every--Pair-of-Shoes-Sold">
+                        <div class="location">
+                            <img src="~/images/pin.png">
+                            <span>Melbourne</span>
+                        </div>
+
+                        <button class="likebtn">
+                            <img src="~/images/heart.png">
+                        </button>
+                        <button class="sharebtn">
+                            <img src="~/images/user.png">
+                        </button>
+
+                        <div class="missiontheme">
+                            <span>
+                                Environment
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title cardtitletext">Education Supplies for Every Pair of Shoes Sold</h5>
+
+                        <p class="card-text carddesctext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod
+                            tempor incididunt ut labore...</p>
+                        <div class="rating">
+                            <span class="cardratingtext">Australian Paradise</span>
+                            <div class="starcontainer">
+                                <img class="star" src="~/images/selected-star.png">
+                                <img class="star" src="~/images/selected-star.png">
+                                <img class="star" src="~/images/selected-star.png">
+                                <img class="star" src="~/images/star.png">
+                                <img class="star" src="~/images/star.png">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- vacancy and timeline details starts from here -->
+                    <!-- vacancy and timeline details starts from here -->
+                    <!-- vacancy and timeline details starts from here -->
+                    <div class="cardnumberdetails card-footer">
+                        <div class="rounded-pill pilltextcolor cardtimesheetpill deadlinetext">
+                            <span>From 10/01/2019 until 25/02/2019
+                            </span>
+
+                        </div>
+
+                        <div class="cardnumberdetails2">
+                            <div class="cardnumberdetails3 seatsleft col-6">
+                                <div>
+                                    <img src="~/images/Seats-left.png" class="cardicon"
+                                        alt="Seats Left">
+                                </div>
+                                <div>
+                                    <p class="cardnumeric">10
+                                        <span class="cardnumerictext">Seats left</span>
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="cardnumberdetails3 progresscontainer col-6">
+                                <div>
+                                    <img src="~/images/mission.png" class="cardicon" alt="Mission">
+                                </div>
+                                <div class="volunteer-cnt">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                        <span class="cardnumerictext">8000 achieved</span>
+                                    
+                            
+                                </div>
+                            
+                            
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card-footer cardfooter">
+                        <button type="button" class="btn btn-outline-warning apply">
+                            <div class="applytext">Apply</div>
+                            <div>
+                                <img class="right-arrow" src="~/images/right-arrow.png">
+                            </div>
+                        </button>
+
+                    </div>
+                </div>
+            </div>*@
+            <!-- third card -->
+            <!-- third card -->
+            <!-- third card -->
+@*
+            <div class="col col-lg-4 col-md-6 col-sm-12">
+                <div class="card h-100">
+                    <img src="~/images/Nourish-the-Children-in--African-country.png" class="card-img-top"
+                        alt="Nourish african children">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This card has even longer content than the first to show that equal
+                            height action.</p>
+                    </div>
+                    <div class="cardnumberdetails card-footer">
+                        <div class="rounded-pill pilltextcolor cardtimesheetpill deadlinetext">
+                            <span>From 10/01/2019 until 25/02/2019
+                            </span>
+
+                        </div>
+                        <div class="cardnumberdetails2">
+                            <div class="cardnumberdetails3 col-6">
+                                <div>
+                                    <img src="~/images/Already-volunteered.png" class="cardicon"
+                                        alt="Already volunteered">
+                                </div>
+                                <div>
+                                    <p class="cardnumeric">250
+                                        <span class="cardnumerictext">Already volunteered</span>
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="cardnumberdetails3 col-6">
+                                <div>
+                                    <img src="~/images/deadline.png" class="cardicon" alt="Deadline">
+                                </div>
+                                <div>
+                                    <p class="cardnumeric">09/01/2019
+                                        <span class="cardnumerictext">Deadline</span>
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card-footer cardfooter">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>*@
+        
+            <!-- Third row -->
+            <!-- Third row -->
+            <!-- Third row -->
+
+       
+            <!-- Third row first card -->
+            <!-- Third row first card -->
+            <!-- Third row first card -->
+           @* <div class="col col-lg-4 col-md-6 col-sm-12">
+                <div class="card h-100">
+
+                    <img src="~/images/Grow-Trees-On-the-path-to-environment-sustainability.png" class="card-img-top"
+                        alt="Grow trees">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>*@
+            <!-- second card -->
+            <!-- second card -->
+            <!-- second card -->
+
+            @*<div class="col col-lg-4 col-md-6 col-sm-12">
+                <div class="card h-100">
+                    <div class="cardimage">
+                        <img src="~/images/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png" class="card-img-top"
+                            alt="Education-Supplies-for-Every--Pair-of-Shoes-Sold">
+                        <div class="location">
+                            <img src="~/images/pin.png">
+                            <span>Melbourne</span>
+                        </div>
+
+                        <button class="likebtn">
+                            <img src="~/images/heart.png">
+                        </button>
+                        <button class="sharebtn">
+                            <img src="~/images/user.png">
+                        </button>
+
+                        <div class="missiontheme">
+                            <span>
+                                Environment
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title cardtitletext">Education Supplies for Every Pair of Shoes Sold</h5>
+
+                        <p class="card-text carddesctext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod
+                            tempor incididunt ut labore...</p>
+                        <div class="rating">
+                            <span class="cardratingtext">Australian Paradise</span>
+                            <div class="starcontainer">
+                                <img class="star" src="~/images/selected-star.png">
+                                <img class="star" src="~/images/selected-star.png">
+                                <img class="star" src="~/images/selected-star.png">
+                                <img class="star" src="~/images/star.png">
+                                <img class="star" src="~/images/star.png">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- vacancy and timeline details starts from here -->
+                    <!-- vacancy and timeline details starts from here -->
+                    <!-- vacancy and timeline details starts from here -->
+                    <div class="cardnumberdetails card-footer">
+                        <div class="rounded-pill pilltextcolor cardtimesheetpill deadlinetext">
+                            <span>From 10/01/2019 until 25/02/2019
+                            </span>
+
+                        </div>
+                        <div class="cardnumberdetails2">
+                            <div class="cardnumberdetails3 col-6">
+                                <div>
+                                    <img src="~/images/Already-volunteered.png" class="cardicon"
+                                        alt="Already volunteered">
+                                </div>
+                                <div>
+                                    <p class="cardnumeric">250
+                                        <span class="cardnumerictext">Already volunteered</span>
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="cardnumberdetails3 col-6">
+                                <div>
+                                    <img src="~/images/deadline.png" class="cardicon" alt="Deadline">
+                                </div>
+                                <div>
+                                    <p class="cardnumeric">09/01/2019
+                                        <span class="cardnumerictext">Deadline</span>
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card-footer cardfooter">
+                        <button type="button" class="btn btn-outline-warning apply">
+                            <div class="applytext">Apply</div>
+                            <div>
+                                <img class="right-arrow" src="~/images/right-arrow.png">
+                            </div>
+                        </button>
+
+                    </div>
+                </div>
+            </div>*@
+            <!-- third card -->
+            <!-- third card -->
+            <!-- third card -->
+
+            @*<div class="col col-lg-4 col-md-6 col-sm-12">
+                <div class="card h-100">
+                    <img src="~/images/Nourish-the-Children-in--African-country.png" class="card-img-top"
+                        alt="Nourish african children">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This card has even longer content than the first to show that equal
+                            height action.</p>
+                    </div>
+                    <div class="cardnumberdetails card-footer">
+                        <div class="rounded-pill pilltextcolor cardtimesheetpill deadlinetext">
+                            <span>From 10/01/2019 until 25/02/2019
+                            </span>
+
+                        </div>
+                        <div class="cardnumberdetails2">
+                            <div class="cardnumberdetails3 col-6">
+                                <div>
+                                    <img src="~/images/Already-volunteered.png" class="cardicon"
+                                        alt="Already volunteered">
+                                </div>
+                                <div>
+                                    <p class="cardnumeric">250
+                                        <span class="cardnumerictext">Already volunteered</span>
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="cardnumberdetails3 col-6">
+                                <div>
+                                    <img src="~/images/deadline.png" class="cardicon" alt="Deadline">
+                                </div>
+                                <div>
+                                    <p class="cardnumeric">09/01/2019
+                                        <span class="cardnumerictext">Deadline</span>
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card-footer cardfooter">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>*@
+        </div>
+
+        <!-- list view starts from here -->
+        <!-- list view starts from here -->
+        <!-- list view starts from here -->
+        <!-- list view starts from here -->
+        <!-- list view starts from here -->
+
+        <div class="listcard listcardarrange">
+            <div class="cardimage listcardimage col-4">
+                <img src="~/images/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png" class="card-img-top"
+                    alt="Education-Supplies-for-Every--Pair-of-Shoes-Sold">
+                <div class="location">
+                    <img src="~/images/pin.png">
+                    <span>Melbourne</span>
+                </div>
+        
+                <button class="likebtn">
+                    <img src="~/images/heart.png">
+                </button>
+                <button class="sharebtn">
+                    <img src="~/images/user.png">
+                </button>
+        
+                <div class="missiontheme">
+                    <span>
+                        Environment
+                    </span>
+                </div>
+            </div>
+            <div class="listcardcontent col-8">
+        
+        
+                <div class="listcardhead">
+                    <div class="listcardheadleft">
+                        <div class="listcardheadleftcontent">
+                            <div class="listcardheadicon">
+                                <img src="~/images/pin1.png" alt="location">
+                            </div>
+                            <div class="listcardheadtext">
+                                <span>Atlanta</span>
+                            </div>
+                        </div>
+                        <div class="listcardheadleftcontent">
+                            <div class="listcardheadicon">
+                                <img src="~/images/web.png" alt="web">
+                            </div>
+                            <div class="listcardheadtext">
+                                <span>Environment</span>
+                            </div>
+                            
+                        </div>
+                        <div class="listcardheadleftcontent">
+                            <div class="listcardheadicon">
+                                <img src="~/images/organization.png" alt="organization">
+
+    
+                            </div>
+                            <div class="listcardheadtext">
+                                <span>Smith International Caring Foundation</span>
+                            </div>
+                            
+                        </div>
+        
+                    </div>
+                    <div class="listcardheadright">
+                        <img class="selectedstar" src="~/images/selected-star.png">
+                        <img class="selectedstar" src="~/images/selected-star.png">
+                        <img class="selectedstar" src="~/images/selected-star.png">
+                        <img class="selectedstar" src="~/images/selected-star.png">
+                        <img class="selectedstar" src="~/images/selected-star.png">
+                        
+                    </div>
+                   
+                </div>
+                <div class="listcardbody">
+                    <p class="cardtitletext mb-0">Planting and afforestation activities</p>
+                    <p class="carddesctext mb-0">This summer we are aiming to plant 4000 trees</p>
+                </div>
+                <div class="listcardfoot">
+                    <div class="listcardfootleft">
+                        <div class="listcardfootleftcontent seatsleft">
+                            <div>
+                                <img src="~/images/Seats-left.png" class="cardicon" alt="Seats Left">
+                            </div>
+                            <div>
+                                <p class="cardnumeric">10
+                                    <span class="cardnumerictext">Seats left</span>
+                                </p>
+        
+                            </div>
+        
+                        </div>
+                        <div class="listcardfootleftcontent progresscontainer">
+                            <div>
+                                <img src="~/images/mission.png" class="cardicon" alt="Mission">
+                            </div>
+                            <div class="volunteer-cnt ms-0">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                        aria-valuemax="100">
+                                    </div>
+                                </div>
+                                <span class="cardnumerictext">8000 achieved</span>
+        
+        
+                            </div>
+                        </div>
+                        <div class="listcardfootleftcontent calender">
+                            <div>
+                                <img src="~/images/calender.png" class="cardicon" alt="Calender">
+                            </div>
+                            <div style="display: flex;flex-direction: column;">
+        
+                                <span class="cardnumerictext">From 01/09/2019</span>
+                                <span class="cardnumerictext">Untill 01/12/2020</span>
+        
+        
+                            </div>
+        
+                        </div>
+        
+                        <div class="listcardfootleftcontent skills">
+                            <div style="padding-top: 4px;">
+                                <i class="bi bi-tools text-secondary tools-icon cardicon" alt="Skills"></i>
+                            </div>
+                        
+                            <div>
+                                <p class="cardnumeric">Skills
+                                    <span class="cardnumerictext">Botany</span>
+                                </p>
+                        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listcardfootright">
+                        <button type="button" class="btn btn-outline-warning apply detail-btn">
+                            <div class="applytext">View Details</div>
+                            <div>
+                                <img class="right-arrow " src="~/images/right-arrow.png">
+                            </div>
+                        </button>
+        
+                    </div>
+        
+        
+        
+        
+        
+                </div>
+            </div>
+        </div>
+
+        <!-- Second list card -->
+        <!-- Second list card -->
+
+        <!-- Second list card -->
+
+        <!-- Second list card -->
+
+
+        <div class="listcard listcardarrange">
+            <div class="cardimage listcardimage col-4">
+                <img src="~/images/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png" class="card-img-top"
+                    alt="Education-Supplies-for-Every--Pair-of-Shoes-Sold">
+                <div class="location">
+                    <img src="~/images/pin.png">
+                    <span>Melbourne</span>
+                </div>
+        
+                <button class="likebtn">
+                    <img src="~/images/heart.png">
+                </button>
+                <button class="sharebtn">
+                    <img src="~/images/user.png">
+                </button>
+        
+                <div class="missiontheme">
+                    <span>
+                        Environment
+                    </span>
+                </div>
+            </div>
+            <div class="listcardcontent col-8">
+        
+        
+                <div class="listcardhead">
+                    <div class="listcardheadleft">
+                        <div class="listcardheadleftcontent">
+                            <div class="listcardheadicon">
+                                <img src="~/images/pin1.png" alt="location">
+                            </div>
+                            <div class="listcardheadtext">
+                                <span>Atlanta</span>
+                            </div>
+                        </div>
+                        <div class="listcardheadleftcontent">
+                            <div class="listcardheadicon">
+                                <img src="~/images/web.png" alt="web">
+                            </div>
+                            <div class="listcardheadtext">
+                                <span>Environment</span>
+                            </div>
+                            
+                        </div>
+                        <div class="listcardheadleftcontent">
+                            <div class="listcardheadicon">
+                                <img src="~/images/organization.png" alt="organization">
+
+    
+                            </div>
+                            <div class="listcardheadtext">
+                                <span>Smith International Caring Foundation</span>
+                            </div>
+                            
+                        </div>
+        
+                    </div>
+                    <div class="listcardheadright">
+                        <img class="selectedstar" src="~/images/selected-star.png">
+                        <img class="selectedstar" src="~/images/selected-star.png">
+                        <img class="selectedstar" src="~/images/selected-star.png">
+                        <img class="selectedstar" src="~/images/selected-star.png">
+                        <img class="selectedstar" src="~/images/selected-star.png">
+                        
+                    </div>
+                   
+                </div>
+                <div class="listcardbody">
+                    <p class="cardtitletext mb-0">Planting and afforestation activities</p>
+                    <p class="carddesctext mb-0">This summer we are aiming to plant 4000 trees</p>
+                </div>
+                <div class="listcardfoot">
+                    <div class="listcardfootleft">
+                        <div class="listcardfootleftcontent seatsleft">
+                            <div>
+                                <img src="~/images/Seats-left.png" class="cardicon" alt="Seats Left">
+                            </div>
+                            <div>
+                                <p class="cardnumeric">10
+                                    <span class="cardnumerictext">Seats left</span>
+                                </p>
+        
+                            </div>
+        
+                        </div>
+                        <div class="listcardfootleftcontent deadlinecontainer">
+                            <div>
+                                <img src="~/images/deadline.png" class="cardicon" alt="Deadline">
+                            </div>
+                            <div>
+                                <p class="cardnumeric">09/01/2019
+                                    <span class="cardnumerictext">Deadline</span>
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="listcardfootleftcontent calender">
+                            <div>
+                                <img src="~/images/calender.png" class="cardicon" alt="Calender">
+                            </div>
+                            <div style="display: flex;flex-direction: column;">
+        
+                                <span class="cardnumerictext">From 01/09/2019</span>
+                                <span class="cardnumerictext">Untill 01/12/2020</span>
+        
+        
+                            </div>
+        
+                        </div>
+        
+                        <div class="listcardfootleftcontent skills">
+                            <div style="padding-top: 4px;">
+                                <i class="bi bi-tools text-secondary tools-icon cardicon" alt="Skills"></i>
+                            </div>
+                        
+                            <div>
+                                <p class="cardnumeric">Skills
+                                    <span class="cardnumerictext">Botany</span>
+                                </p>
+                        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listcardfootright">
+                        <button type="button" class="btn btn-outline-warning apply detail-btn">
+                            <div class="applytext">View Details</div>
+                            <div>
+                                <img class="right-arrow " src="~/images/right-arrow.png">
+                            </div>
+                        </button>
+        
+                    </div>
+        
+        
+        
+        
+        
+                </div>
+            </div>
+        </div>
+        <nav class="paginationnav" aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">
+                <img src="~/images/left.png">
+              </a></li>
+
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">5</a></li>
+              <li class="page-item"><a class="page-link" href="#">
+                <img src="~/images/right-arrow1.png">
+              </a></li>
+              
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+    </div>

@@ -1,0 +1,65 @@
+C:\Jay Modi\Final CI - without database2\CI-platform\MVC\CI.Repositories\bin\Debug\net6.0\CI.Repositories.deps.json
+C:\Jay Modi\Final CI - without database2\CI-platform\MVC\CI.Repositories\bin\Debug\net6.0\CI.Repositories.runtimeconfig.json
+C:\Jay Modi\Final CI - without database2\CI-platform\MVC\CI.Repositories\bin\Debug\net6.0\CI.Repositories.dll
+C:\Jay Modi\Final CI - without database2\CI-platform\MVC\CI.Repositories\bin\Debug\net6.0\ref\CI.Repositories.dll
+C:\Jay Modi\Final CI - without database2\CI-platform\MVC\CI.Repositories\bin\Debug\net6.0\CI.Repositories.pdb
+C:\Jay Modi\Final CI - without database2\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.csproj.AssemblyReference.cache
+C:\Jay Modi\Final CI - without database2\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Jay Modi\Final CI - without database2\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.AssemblyInfoInputs.cache
+C:\Jay Modi\Final CI - without database2\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.AssemblyInfo.cs
+C:\Jay Modi\Final CI - without database2\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.csproj.CoreCompileInputs.cache
+C:\Jay Modi\Final CI - without database2\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.dll
+C:\Jay Modi\Final CI - without database2\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\ref\CI.Repositories.dll
+C:\Jay Modi\Final CI - without database2\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.pdb
+C:\Jay Modi\Final CI - without database2\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.genruntimeconfig.cache
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Repositories\bin\Debug\net6.0\CI.Repositories.deps.json
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Repositories\bin\Debug\net6.0\CI.Repositories.runtimeconfig.json
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Repositories\bin\Debug\net6.0\CI.Repositories.dll
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Repositories\bin\Debug\net6.0\ref\CI.Repositories.dll
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Repositories\bin\Debug\net6.0\CI.Repositories.pdb
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.AssemblyInfoInputs.cache
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.AssemblyInfo.cs
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.csproj.CoreCompileInputs.cache
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.dll
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\ref\CI.Repositories.dll
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.pdb
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.genruntimeconfig.cache
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.csproj.AssemblyReference.cache
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Repositories\bin\Debug\net6.0\CI.Entity.dll
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Repositories\bin\Debug\net6.0\CI.Entity.pdb
+C:\Jay Modi\Final CI - with DB N-tier 2\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.csproj.CopyComplete
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Repositories\bin\Debug\net6.0\CI.Repositories.deps.json
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Repositories\bin\Debug\net6.0\CI.Repositories.runtimeconfig.json
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Repositories\bin\Debug\net6.0\CI.Repositories.dll
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Repositories\bin\Debug\net6.0\ref\CI.Repositories.dll
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Repositories\bin\Debug\net6.0\CI.Repositories.pdb
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Repositories\bin\Debug\net6.0\CI.Entity.dll
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Repositories\bin\Debug\net6.0\CI.Entity.pdb
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.csproj.AssemblyReference.cache
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.AssemblyInfoInputs.cache
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.AssemblyInfo.cs
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.csproj.CoreCompileInputs.cache
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.csproj.CopyComplete
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.dll
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\ref\CI.Repositories.dll
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.pdb
+C:\Jay Modi\Final CI - with DB N-tier started implementing in controller\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.genruntimeconfig.cache
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Repositories\bin\Debug\net6.0\CI.Repositories.deps.json
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Repositories\bin\Debug\net6.0\CI.Repositories.runtimeconfig.json
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Repositories\bin\Debug\net6.0\CI.Repositories.dll
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Repositories\bin\Debug\net6.0\ref\CI.Repositories.dll
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Repositories\bin\Debug\net6.0\CI.Repositories.pdb
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Repositories\bin\Debug\net6.0\CI.Entity.dll
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Repositories\bin\Debug\net6.0\CI.Entity.pdb
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.AssemblyInfoInputs.cache
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.AssemblyInfo.cs
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.csproj.CoreCompileInputs.cache
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.csproj.CopyComplete
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.dll
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\ref\CI.Repositories.dll
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.pdb
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.genruntimeconfig.cache
+C:\Jay Modi\Final CI - with DB N-tier copy for SMTP\CI-platform\MVC\CI.Repositories\obj\Debug\net6.0\CI.Repositories.csproj.AssemblyReference.cache

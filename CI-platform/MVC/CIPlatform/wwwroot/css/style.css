@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.carousel-img {
+    height: 100vh;
+    width: 100%;
+    filter: brightness(70%);
+}
+
+.main-container {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.row {
+    width: 100%;
+    height: 100%;
+}
+
+/ Login /
+.left-container {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(100% - 33%);
+    max-width: calc(100% - 33%);
+}
+
+.right-container {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 33%;
+    /* max-width: 33%; */
+}
+
+form input {
+    width: 100%;
+}
+
+.textstyle {
+    letter-spacing: 0px;
+    color: #414141;
+}
+
+.privacy {
+    margin-bottom: -55%;
+    margin-top: 148%;
+}
+
+.btn-login {
+    background: #F8863400 0% 0% no-repeat padding-box;
+    border-radius: 24px;
+    width: 100% !important;
+    color: #f88634;
+    border: 2px solid #f88634;
+    justify-content: center;
+}
+
+    .btn-login:hover {
+        color: #fff;
+        background-color: #f88634;
+    }
+
+.createlink {
+    color: #2B64B1;
+}
+
+.forgot {
+    font-size: 2rem;
+}
+
+form {
+    align-self: center;
+    width: 23vw;
+}
+
+.forgotform {
+    padding-left: 2vw;
+}
+
+.sidegutteroff {
+    --bs-gutter-x: 0rem;
+}
+
+@media screen and (max-width:575px) {
+    .right-container {
+        width: 100vw;
+        margin-left: 2vw;
+    }
+
+    form {
+        width: 25vw;
+        padding-left: 5vw;
+    }
+
+    .left-container {
+        padding-left: 0px;
+        margin-left: 0%;
+        padding-right: 0px;
+    }
+
+    .carousel-img {
+        height: 45vh;
+    }
+
+    .privacy {
+        margin-top: unset;
+        margin-bottom: unset;
+    }
+    /* .carousel-img{
+     width:100vw;
+   } */
+}
+
+@media screen and (min-width:768px) {
+    .privacy {
+        margin-top: unset;
+        margin-bottom: unset;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .firstform {
+        width: 92vw;
+    }
+}
+
+
+
+@media screen and (min-width:576px) and (max-width:767px) {
+    .firstform {
+        width: 33vw;
+        margin-right: -7vw;
+    }
+
+    .privacy {
+        margin-right: -9vw;
+    }
+
+
+    @media screen and (min-width:576px) and (max-width:700px) {
+        .right-container {
+            width: 109vw;
+        }
+
+        .row {
+            width: 109vw;
+        }
+
+        .fillheight {
+            width: unset;
+        }
+    }
+    /* @media screen and (min-width:774px){
+    /* .row{
+      width:93vw;
+    } */
+    .privacy {
+        margin-bottom: unset;
+        margin-top: unset;
+    }
+    /* .right-container .left-container{
+      height:100vh;
+    } */
+}
+
+*/
+@media screen and (max-width:576px) {
+    form
+
+{
+    padding-left: 3vw;
+}
+
+.left-container {
+    margin: 0px !important;
+}
+
+.row {
+    margin: 0px !important;
+}
+
+}
+/*log in page perfectly okay*/
+
+@media screen and (max-width:575px) {
+    .forgotformwidth {
+        width: 93vw;
+    }
+}
